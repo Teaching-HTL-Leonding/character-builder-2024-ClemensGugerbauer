@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+
+  .settings {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    width: 400px;
+    justify-content: space-between;
+
+    > label {
+      flex: 2;
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+
+  .image {
+    flex: 1;
+    img {
+      height: 100%;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}
