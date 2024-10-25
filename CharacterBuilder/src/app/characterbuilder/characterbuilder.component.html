@@ -1,0 +1,49 @@
+<h1>Character Builder</h1>
+
+<div class="content">
+
+  <div class="settings">
+    <label for="eyes">eyes
+      <select id="eyes" [(ngModel)]="eyes">
+        <option>NoEye</option>
+        <option>HalfOpen</option>
+        <option>Closed</option>
+        <option>Open</option>
+      </select>
+    </label>
+
+    <label for="hasHammer">Has Hammer
+      <input type="checkbox" id="hasHammer" [(ngModel)]="hasHammer"/>
+    </label>
+
+    <label for="mouth">mouth
+      <select id="mouth" [(ngModel)]="mouth">
+        <option>NoMouth</option>
+        <option>Happy</option>
+        <option>Normal</option>
+        <option>Unhappy</option>
+      </select>
+    </label>
+
+    <label for="rightHand">rightHand
+      <select id="rightHand" [(ngModel)]="rightHand">
+        <option>NoHand</option>
+        <option>Normal</option>
+        <option>Victory</option>
+      </select>
+    </label>
+
+    <label for="hasTail">Has Tail
+      <input type="checkbox" id="hasTail" [(ngModel)]="hasTail"/>
+    </label>
+
+    <button (click)="onBuildImageBtnClick()">Build Image</button>
+    <button>Feeling lucky</button>
+
+  </div>
+
+  <div class="image">
+    <img id="character-image" src="https://via.placeholder.com/150" alt="Character Image">
+  </div>
+
+</div>
